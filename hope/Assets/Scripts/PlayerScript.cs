@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public WeaponScript weaponScript;
+
     private Rigidbody rb;
     private BoxCollider boxCollider;
     private Transform cam;
@@ -12,6 +14,11 @@ public class PlayerScript : MonoBehaviour
     public float speed = 9.5f;
     public float rotationSpeed = 2.0f;
     public bool canJump = false;
+    public bool canMove = true;
+    public bool canLook = true;
+
+    public bool canUseWeapon = false;
+    
 
     private float horizontalInput;
     private float verticalInput;
@@ -28,17 +35,23 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+        if (canMove)
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
-        verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
+            verticalInput = Input.GetAxis("Vertical");
+            transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
 
-        mouseXInput = Input.GetAxis("Mouse X");
-        transform.Rotate(new Vector3(0, mouseXInput * rotationSpeed, 0));
+        }
+        if (canLook)
+        {
+            mouseXInput = Input.GetAxis("Mouse X");
+            transform.Rotate(new Vector3(0, mouseXInput * rotationSpeed, 0));
 
-        mouseYInput = Input.GetAxis("Mouse Y");
-        cam.transform.Rotate(new Vector3(-mouseYInput * rotationSpeed, 0, 0));
+            mouseYInput = Input.GetAxis("Mouse Y");
+            cam.transform.Rotate(new Vector3(-mouseYInput * rotationSpeed, 0, 0));
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
@@ -53,6 +66,19 @@ public class PlayerScript : MonoBehaviour
         {
             //Debug.Log("canjump");
             canJump = true;
+        }
+        if (other.gameObject.CompareTag("CantMove"))
+        {
+            Debug.Log("shouldnt be able to move");
+            canMove = false;
+        }
+    }
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("CantMove"))
+        {
+            Debug.Log("should be able to move");
+            canMove = true;
         }
     }
 }
