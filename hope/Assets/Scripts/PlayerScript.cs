@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
@@ -16,10 +17,10 @@ public class PlayerScript : MonoBehaviour
     public bool canJump = false;
     public bool canMove = true;
     public bool canLook = true;
-
     public bool canUseWeapon = false;
-    
 
+
+    private float fire1Input;
     private float horizontalInput;
     private float verticalInput;
     private float mouseXInput;
@@ -51,12 +52,26 @@ public class PlayerScript : MonoBehaviour
 
             mouseYInput = Input.GetAxis("Mouse Y");
             cam.transform.Rotate(new Vector3(-mouseYInput * rotationSpeed, 0, 0));
+
+            
         }
+        
+        //Debug.Log(cam.transform.rotation);
 
         if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
             rb.velocity = new Vector3(0, 5, 0);
             canJump = false;
+        }
+
+        fire1Input = Input.GetAxis("Fire1");
+
+        if (canUseWeapon)
+        {
+            if (fire1Input == 1)
+            {
+                weaponScript.weaponFire();
+            }
         }
     }
 

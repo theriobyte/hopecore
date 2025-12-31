@@ -13,7 +13,6 @@ public class WeaponScript : MonoBehaviour
     public bool canFire;
     public bool weaponUnlocked;
 
-    private float fire1Input;
 
     // Start is called before the first frame update
     void Start()
@@ -24,15 +23,11 @@ public class WeaponScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        fire1Input = Input.GetAxis("Fire1");
         
-        if (fire1Input == 1) {
-            weaponFire();
-        }
         
     }
 
-    void weaponFire()
+    public void weaponFire()
     {
         if (canFire)
         {

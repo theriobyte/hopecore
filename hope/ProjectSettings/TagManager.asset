@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: HELP
+    uniqueID: 235686611
+    locked: 0
