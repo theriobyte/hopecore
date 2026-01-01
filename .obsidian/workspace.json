@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "hopecorereal/notepad.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "notepad"
             }
           }
         ]
@@ -184,24 +184,24 @@
   },
   "active": "f11c1d9e258adcbd",
   "lastOpenFiles": [
-    "hopecorereal/titlescreen.clip",
-    "hopecorereal/concepts_0",
-    "hope/Temp/ADB-Refresh1f3d2bd6ee9930041bee7fef8abc2f00",
-    "hope/Temp/ADB-Refresh5dad1947f023b1b4e841e6913b95600c",
-    "hope/Library/Artifacts/1b/1bfcb7f69aaff74853193979e3afc8e0",
-    "hope/Library/TempArtifacts/Extra/c44dc9229ba93ed44b9616697b4a82d7.info",
-    "hope/Library/Artifacts/cc/cc2b9694d481e3a186e90ff5058ecd81",
-    "hope/Temp/ADB-Refresh8784b86f3b734a942867a4eb08bf179e",
-    "hope/Library/Artifacts/a3/a346772f3b1da49e3ccd0e55c594f0c3",
-    "hope/Library/TempArtifacts/Extra/828950e55907fc14fa8c64995cce1897.info",
-    "hope/Library/Artifacts/c6/c61ee5ddc670a3cc1c44fd23f0973fd5",
+    "hope/Library/Artifacts/eb/eb270f2e2156a833c846ed2b126bcabc",
+    "hope/Assets/Prefabs/Point Light.prefab.meta",
+    "hope/Assets/Prefabs/Point Light.prefab",
+    "hope/Temp/ADB-Refresha140443c201498a44b32dfcb21e2d88d",
+    "hope/Library/TempArtifacts/Extra/1625bd89215f9dd4ea90cd817b9474f0.info",
+    "hope/Temp/ADB-Refreshf5844db563848a549b652b2e41e5897d",
+    "hope/Library/Artifacts/00/001212333e72c82fb19b6f81b661ec15",
+    "hope/Temp/Burst/burst-aotn2s7heuc.540",
+    "hope/Temp/Burst/burst-aotclzuttfd.4cq",
+    "hope/Temp/Burst/burst-aotc4o4g7av.wh5",
+    "hope/Temp/Burst/burst-aot9f5avvmc.hgo",
+    "README.md",
     "hope/Assets/Art/placelogo.png",
     "hope/Assets/Art/titlescreen.png",
     "hope/Assets/Art/black.png",
     "hope/Assets/Art/sheet0001.png",
     "hopecorereal/sheet0001.png",
     "hopecorereal/notepad.md",
-    "README.md",
     "hopecorereal/bodiesprotagfront.png",
     "hopecorereal/bodiesprotagside.png",
     "hope/Assets/Art/realwood.jpg",

@@ -953,25 +953,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892553761124193857, guid: 1d582213e3bf5d941a451f98d1e22225, type: 3}
-      propertyPath: ammoMax
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892553761124193857, guid: 1d582213e3bf5d941a451f98d1e22225, type: 3}
-      propertyPath: ammoAmount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892553761124193857, guid: 1d582213e3bf5d941a451f98d1e22225, type: 3}
-      propertyPath: ammoDamage
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892553761124193857, guid: 1d582213e3bf5d941a451f98d1e22225, type: 3}
-      propertyPath: weaponCooldown
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 2430970993159791339, guid: 1d582213e3bf5d941a451f98d1e22225, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498789753633366453, guid: 1d582213e3bf5d941a451f98d1e22225, type: 3}
+      propertyPath: m_Color.b
+      value: 0.55345905
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498789753633366453, guid: 1d582213e3bf5d941a451f98d1e22225, type: 3}
+      propertyPath: m_Color.g
+      value: 0.55345905
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498789753633366453, guid: 1d582213e3bf5d941a451f98d1e22225, type: 3}
+      propertyPath: m_Color.r
+      value: 0.55345905
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

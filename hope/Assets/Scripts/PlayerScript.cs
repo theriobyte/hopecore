@@ -84,7 +84,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (other.gameObject.CompareTag("CantMove"))
         {
-            Debug.Log("shouldnt be able to move");
+            //System.Debug.Log("shouldnt be able to move");
             canMove = false;
         }
     }
@@ -92,7 +92,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CantMove"))
         {
-            Debug.Log("should be able to move");
+            //System.Debug.Log("should be able to move");
             canMove = true;
         }
     }

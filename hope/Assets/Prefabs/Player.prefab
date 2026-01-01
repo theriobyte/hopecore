@@ -216,14 +216,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85aab6c10db20cd4e8460e5b5c6bd627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponScript: {fileID: 0}
+  weaponScript: {fileID: 1892553761124193857}
   healthP: 5
   speed: 9.5
   rotationSpeed: 2
   canJump: 0
   canMove: 1
   canLook: 1
-  canUseWeapon: 0
+  canUseWeapon: 1
 --- !u!1 &8482099153203371649
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,8 +273,9 @@ MonoBehaviour:
   ammoMax: 16
   ammoAmount: 5
   ammoDamage: 10
-  weaponCooldown: 5
-  canFire: 0
+  weaponCooldown: 1.5
+  cooldownTimer: 0
+  canFire: 1
   weaponUnlocked: 0
 --- !u!95 &2046298509019445296
 Animator:
